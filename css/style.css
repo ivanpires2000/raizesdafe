@@ -49,9 +49,18 @@ body {
 /* Banner Principal */
 .hero {
     background: url('assets/banner.jpg') no-repeat center center/cover;
-    color: #fff;
+    color: #0f0f0f;
     text-align: center;
     padding: 100px 0;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
 .hero h2 {
@@ -68,28 +77,171 @@ body {
     font-size: 1rem;
 }
 
-/* Versículos do Dia */
+/* Versículo do Dia */
 .versiculos {
     background: #fff;
     padding: 40px 0;
     text-align: center;
 }
 
-.swiper-container {
-    width: 100%;
-    max-width: 800px;
+.card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin: auto;
+    max-width: 600px;
+    text-align: center;
 }
 
-.swiper-slide blockquote {
-    font-size: 1.2rem;
+#daily-verse {
+    font-size: 1.5rem;
     font-style: italic;
     color: #555;
+    margin-bottom: 20px;
 }
 
-.swiper-pagination {
-    position: relative;
-    bottom: 0;
+#daily-verse cite {
+    display: block;
+    font-size: 1rem;
+    color: #77b300;
+    margin-top: 10px;
+}
+
+.creditos {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.creditos a {
+    color: #77b300;
+    text-decoration: none;
+}
+
+.creditos a:hover {
+    text-decoration: underline;
+}
+
+/* Barra de Pesquisa */
+.search-bar {
+    background: #333;
+    padding: 20px 0;
+}
+
+.search-bar form {
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+}
+
+.search-bar button {
+    background: #77b300;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.search-bar button:hover {
+    background: #669900;
+}
+
+/* Posts Recentes */
+.posts {
+    background: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.posts h2 {
+    margin-bottom: 40px;
+}
+
+.posts .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.posts .card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.posts .card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.posts .card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.posts .card .btn {
+    background: #77b300;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.posts .card .btn:hover {
+    background: #669900;
+}
+
+/* Newsletter */
+.newsletter {
+    background: #77b300;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.newsletter h2 {
+    margin-bottom: 20px;
+}
+
+.newsletter p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.newsletter input[type="email"] {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+}
+
+.newsletter button {
+    background: #fff;
+    color: #77b300;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.newsletter button:hover {
+    background: #f9f9f9;
 }
 
 /* Curiosidades Bíblicas */
@@ -133,21 +285,3 @@ body {
 .social-icons a {
     color: #fff;
     margin: 0 10px;
-    font-size: 1.2rem;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .hero h2 {
-        font-size: 2rem;
-    }
-
-    .main-nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .main-nav ul li a {
-        margin: 10px 0;
-    }
-}

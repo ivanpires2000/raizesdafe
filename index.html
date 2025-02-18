@@ -12,8 +12,10 @@
     <meta property="og:url" content="https://seu-dominio.com">
     <meta name="twitter:card" content="summary_large_image">
     <title>Blog Bíblico</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Folha de Estilo -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome (Ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -26,7 +28,7 @@
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Início</a></li>
-                    <li><a href="#versiculos-do-dia">Versículos do Dia</a></li>
+                    <li><a href="#versiculo-do-dia">Versículo do Dia</a></li>
                     <li><a href="#curiosidades">Curiosidades Bíblicas</a></li>
                     <li><a href="#dinamicas">Dinâmicas para EBD</a></li>
                 </ul>
@@ -43,21 +45,65 @@
         </div>
     </section>
 
-    <!-- Versículos do Dia -->
-    <section id="versiculos-do-dia" class="versiculos">
+    <!-- Versículo do Dia -->
+    <section id="versiculo-do-dia" class="versiculos">
         <div class="container">
-            <h2>Versículos do Dia</h2>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <blockquote>"O Senhor é meu pastor; nada me faltará." <cite>Salmo 23:1</cite></blockquote>
-                    </div>
-                    <div class="swiper-slide">
-                        <blockquote>"Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas." <cite>Mateus 6:33</cite></blockquote>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
+            <h2>Versículo do Dia</h2>
+            <div class="card">
+                <blockquote id="daily-verse">
+                    "Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crer não pereça, mas tenha a vida eterna." 
+                    <cite>João 3:16</cite>
+                </blockquote>
+                <p class="creditos">
+                    Fonte: <a href="https://www.biblegateway.com" target="_blank" rel="noopener noreferrer">Bible Gateway</a>
+                </p>
             </div>
+        </div>
+    </section>
+
+    <!-- Barra de Pesquisa -->
+    <div class="search-bar">
+        <div class="container">
+            <form action="#" method="GET">
+                <input type="text" name="query" placeholder="Pesquisar no blog..." required>
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Posts Recentes -->
+    <section id="posts" class="posts">
+        <div class="container">
+            <h2>Posts Recentes</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>A Importância da Fé</h3>
+                    <p>Neste artigo, exploramos como a fé é fundamental para a vida cristã e como ela pode transformar nossas decisões diárias.</p>
+                    <a href="post-importancia-da-fe.html" class="btn">Ler Mais</a>
+                </div>
+                <div class="card">
+                    <h3>O Poder da Oração</h3>
+                    <p>Descubra como a oração pode fortalecer sua conexão com Deus e trazer paz ao seu coração.</p>
+                    <a href="post-poder-da-oracao.html" class="btn">Ler Mais</a>
+                </div>
+                <div class="card">
+                    <h3>O Significado do Perdão</h3>
+                    <p>Reflexão sobre o perdão na Bíblia e como ele pode impactar nossas relações interpessoais.</p>
+                    <a href="post-significado-do-perdao.html" class="btn">Ler Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="newsletter" class="newsletter">
+        <div class="container">
+            <h2>Inscreva-se na Nossa Newsletter</h2>
+            <p>Receba reflexões bíblicas, curiosidades e novidades diretamente no seu e-mail.</p>
+            <form action="#" method="POST">
+                <input type="email" name="email" placeholder="Digite seu e-mail..." required>
+                <button type="submit" class="btn">Inscrever-se</button>
+            </form>
         </div>
     </section>
 
@@ -69,11 +115,31 @@
             <div class="cards">
                 <div class="card">
                     <h3>O Menor Versículo</h3>
-                    <p>"Jesus chorou." (João 11:35) é o menor versículo da Bíblia <button class="citation-flag" data-index="6">.</p>
+                    <p>"Jesus chorou." (João 11:35) é o menor versículo da Bíblia.</p>
                 </div>
                 <div class="card">
                     <h3>O Sábado</h3>
-                    <p>Guardar o sábado é um hábito bíblico que simboliza descanso e renovação espiritual <button class="citation-flag" data-index="8">.</p>
+                    <p>Guardar o sábado é um hábito bíblico que simboliza descanso e renovação espiritual.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dinâmicas para EBD -->
+    <section id="dinamicas" class="dinamicas">
+        <div class="container">
+            <h2>Dinâmicas para EBD</h2>
+            <p>Confira atividades práticas para enriquecer suas aulas na Escola Bíblica Dominical.</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>Atividade de Reflexão</h3>
+                    <p>Uma dinâmica simples para ajudar os alunos a refletirem sobre a importância da fé.</p>
+                    <a href="dinamica-reflexao.html" class="btn">Ver Detalhes</a>
+                </div>
+                <div class="card">
+                    <h3>Jogo Bíblico</h3>
+                    <p>Um jogo divertido para ensinar passagens bíblicas de forma interativa.</p>
+                    <a href="jogo-biblico.html" class="btn">Ver Detalhes</a>
                 </div>
             </div>
         </div>
@@ -87,35 +153,12 @@
                 <a href="#"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/seo.js"></script>
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "BlogPosting",
-          "headline": "Reflexão sobre o Salmo 23",
-          "datePublished": "2025-02-19",
-          "dateModified": "2025-02-19",
-          "author": {
-            "@type": "Person",
-            "name": "Seu Nome"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "Blog Bíblico",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://seu-dominio.com/assets/logo.png"
-            }
-          },
-          "description": "Uma reflexão profunda sobre o Salmo 23 e suas lições para a vida moderna."
-        }
-        </script>
 </body>
 </html>
